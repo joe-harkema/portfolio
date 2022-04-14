@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all.sort_by { |p| p.id }
   end
 
+  def angular
+    @angular_portfolio_items = Portfolio.angular.sort_by { |p| p.id }
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
