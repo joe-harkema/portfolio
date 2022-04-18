@@ -9,8 +9,6 @@ class Portfolio < ApplicationRecord
   after_initialize :set_defaults
 
   def set_defaults
-    self.main_image ||=
-
     self.main_image ||= "ph_600x400.png"
     self.thumb_image ||= "ph_350x200.png"
   end
